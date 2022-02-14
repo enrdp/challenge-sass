@@ -110,7 +110,7 @@ ul.advantages li.adv-item{
         &:nth-child(#{$i}){
     @include background_gradient(left, $list_color1);
     //@include text_gradient(left, $list_color2);
-    color: lighten(green, $i * 10%);
+    color: lighten($quaternary-color, $i * 10%);
         }
     }
 }

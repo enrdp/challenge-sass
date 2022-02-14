@@ -107,42 +107,42 @@ ul.advantages li.adv-item:nth-child(1) {
   background: -moz-linear-gradient(left, green, red, orange);
   background: -o-linear-gradient(left, green, red, orange);
   background: linear-gradient(left, green, red, orange);
-  color: #00b300;
+  color: #1a1a1a;
 }
 ul.advantages li.adv-item:nth-child(2) {
   background: -webkit-linear-gradient(left, green, red, orange);
   background: -moz-linear-gradient(left, green, red, orange);
   background: -o-linear-gradient(left, green, red, orange);
   background: linear-gradient(left, green, red, orange);
-  color: #00e600;
+  color: #333333;
 }
 ul.advantages li.adv-item:nth-child(3) {
   background: -webkit-linear-gradient(left, green, red, orange);
   background: -moz-linear-gradient(left, green, red, orange);
   background: -o-linear-gradient(left, green, red, orange);
   background: linear-gradient(left, green, red, orange);
-  color: #1aff1a;
+  color: #4d4d4d;
 }
 ul.advantages li.adv-item:nth-child(4) {
   background: -webkit-linear-gradient(left, green, red, orange);
   background: -moz-linear-gradient(left, green, red, orange);
   background: -o-linear-gradient(left, green, red, orange);
   background: linear-gradient(left, green, red, orange);
-  color: #4dff4d;
+  color: #666666;
 }
 ul.advantages li.adv-item:nth-child(5) {
   background: -webkit-linear-gradient(left, green, red, orange);
   background: -moz-linear-gradient(left, green, red, orange);
   background: -o-linear-gradient(left, green, red, orange);
   background: linear-gradient(left, green, red, orange);
-  color: #80ff80;
+  color: gray;
 }
 ul.advantages li.adv-item:nth-child(6) {
   background: -webkit-linear-gradient(left, green, red, orange);
   background: -moz-linear-gradient(left, green, red, orange);
   background: -o-linear-gradient(left, green, red, orange);
   background: linear-gradient(left, green, red, orange);
-  color: #b3ffb3;
+  color: #999999;
 }
 
 /*# sourceMappingURL=style.css.map */
