@@ -1,5 +1,23 @@
 {
+  "name": "challenge-sass",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enrdp/challenge-sass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enrdp/challenge-sass/issues"
+  },
+  "homepage": "https://github.com/enrdp/challenge-sass#readme",
   "dependencies": {
     "sass": "^1.49.7"
-  }
+}
 }
