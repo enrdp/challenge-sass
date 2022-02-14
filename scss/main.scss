@@ -1,0 +1,116 @@
+@import './variables.scss';
+@import './mixins';
+
+body {
+    font: 100% "Space Mono", monospace;
+    color: $primary-color;
+    margin: 0;
+    padding: 0;
+    background-color: $tertiary-color;
+    overflow-x: hidden;
+}
+
+main {
+    padding: 0 $default_padding;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+
+    section {
+        flex-grow: 1;
+        flex-basis: 45%;
+        border: 1px $secondary-color solid;
+        @include box-shadow($primary-color);
+        padding: $default_padding;
+        margin: 16px;
+        clear: both;
+        overflow: auto;
+        box-sizing: border-box;
+    }
+    section#selling-points {
+        flex-grow: 2;
+        flex-basis: 100%;
+    }
+    code {
+        background: $quaternary-color;
+        border: 1px solid $primary-color;
+        color: $secondary-color;
+        page-break-inside: avoid;
+        font-family: monospace;
+        font-size: 15px;
+        line-height: 1.6;
+        margin-bottom: 1.6em;
+        max-width: 100%;
+        overflow: auto;
+        padding: $default_padding calc(#{$default_padding} * 1.5em);
+        display: block;
+        word-wrap: break-word;
+    }
+    code.before {
+        float: left;
+        width: 40%;
+    }
+    code.after {
+        float: right;
+        width: 40%;
+    }
+
+}
+footer h3{
+    padding: calc(#{$default_padding} * 2em);
+}
+
+h1,
+h2,
+h3 {
+    color: $headings;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5em;
+    padding: calc(#{$default_padding} * 2em);
+    margin-bottom: 0px;
+}
+
+.messages {
+    padding: $default_padding;
+}
+
+%messages_displayed{
+    border: 1px solid $secondary-color;
+    padding: $default_padding;
+    color: $tertiary-color;
+}
+.success {
+    @extend %messages_displayed;
+    background-color: $success;
+}
+
+.error {
+    @extend %messages_displayed;
+    background-color: $error;
+    &:hover{
+        background-color: $success;
+    }
+}
+
+.warning {
+    @extend %messages_displayed;
+    background-color: $warning;
+}
+// FOR
+ul.advantages li.adv-item{
+    @for $i from 1 to 7 {
+        &:nth-child(#{$i}){
+    @include background_gradient(left, $list_color1);
+    //@include text_gradient(left, $list_color2);
+    color: lighten(green, $i * 10%);
+        }
+    }
+}
